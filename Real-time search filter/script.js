@@ -78,5 +78,9 @@ input.addEventListener("input",function(){
     return user.name.toLowerCase().startsWith(input.value)
   })
   document.querySelector(".cards").innerHTML="";
+  if (newarr.length === 0) {
+      document.querySelector(".cards").innerHTML="No cards found";
+      return;
+  }
   showUser(newarr)
 })
