@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+    <div class="hide form-container">
+        <h2>New Call</h2>
+        <form autocomplete="off">
+            <label for="">Image URL</label>
+            <input required type="text" id="image" placeholder="https://example.com/photo.jpg">
+            
+            <label for="">Full Name</label>
+            <input required type="text" id="fullName" placeholder="Enter your Full Name">
+            
+            <label for="">Home Town</label>
+            <input required type="text" id="homeTown" placeholder="Enter Your Home Town">
+
+            <label for="">Purpose</label>
+            <input required type="text" placeholder="Enter Your Home Town">
+
+            <label for="">Category</label>
+            <label class="tag-checkbox">
+                <input required type="radio" id="purpose" name="category" value="emergency">
+                <span>Emergency</span>
+            </label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="important">
+                <span>Important</span>
+            </label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="urgent">
+                <span>Urgent</span>
+            </label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="no-rush">
+                <span>No-Rush</span>
+            </label>
+            <button class="submit-btn"> create Note</button>
+        </form>
+        <button class="closeForm">close</button>
+    </div>
+   <div class="card-container">
+    <div class="vertical-buttons">
+      <button id="addNote">+</button>
+      <button id="upBtn">↑</button>
+      <button id="downBtn">↓</button>
+    </div>
+<div class="stack">
+    </div>
+    
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
