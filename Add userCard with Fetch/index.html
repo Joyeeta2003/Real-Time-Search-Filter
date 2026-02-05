@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Cards - Dark Theme</title>
+    <style>
+  .refresh-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+  }
+
+  .refresh-btn:hover {
+    background: #1d4ed8;
+  }
+</style>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="dark">
+    <div id="container" class=" users grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+    <button  class="refresh-btn">
+  🔄 Refresh
+</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
